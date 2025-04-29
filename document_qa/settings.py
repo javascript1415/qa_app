@@ -82,3 +82,18 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Gemini API Key
 GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
+
+
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [],  # You usually keep this empty unless you have global templates
+        'APP_DIRS': True,   # THIS must be True so Django looks inside each app's templates/
+        'OPTIONS': {
+            'context_processors': [
+                ...
+            ],
+        },
+    },
+]
