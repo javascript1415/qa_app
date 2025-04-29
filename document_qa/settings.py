@@ -16,7 +16,7 @@ DEBUG = os.getenv('DEBUG', 'False') == 'False'
 
 import os
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost').split(',')
+ALLOWED_HOSTS = ['https://qa-app-2qsd.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
